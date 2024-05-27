@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SEO Master - SEO Agency Website Template</title>
+    <title>Diskominsa</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -21,15 +21,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="<?php echo base_url() ?>template/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="<?php echo base_url() ?>template/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="<?php echo base_url() ?>template/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('template/') ?>lib/animate/animate.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('template/') ?>lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('template/') ?>lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="<?php echo base_url() ?>template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('template/') ?>css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="<?php echo base_url() ?>template/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url('template/') ?>css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,8 +47,8 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-search me-2"></i>Diskominsa <span class="fs-5">jaya</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <h1 class="m-0"><i class="fa fa-search me-2"></i>Diskominsa<span class="fs-5">Jaya</span></h1>
+                    <!-- <img src="<?php echo base_url('template/') ?>img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -78,13 +78,13 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated zoomIn">All in one SEO tool need to grow your business rapidly</h1>
-                            <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
+                            <h1 class="text-white mb-4 animated zoomIn">Artikel seputar Aceh Jaya dan Calang dari tribunnews</h1>
+                            <p class="text-white pb-3 animated zoomIn">Menggabungkan artikel dengan tag "calang" dan tag "aceh jaya" dari tribunnews.com.</p>
                             <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Free Quote</a>
                             <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid" src="img/hero.png" alt="">
+                            <img class="img-fluid" src="<?php echo base_url('template/') ?>img/hero.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -111,6 +111,33 @@
         </div>
         <!-- Full Screen Search End -->
 
+         <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative mb-4 pb-2">
+                    <h6 class="position-relative text-primary ps-4">Artikel</h6>
+                    <h2 class="mt-2">Artikel Pilihan Dari aceh.tribunnews.com</h2>
+                </div>
+                <div class="row g-5">
+                    <?php 
+                    $no = 2;
+                    foreach($judul as $jud){ 
+                        
+                        ?>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="img-fluid rounded w-100 mb-3" src="<?php echo $gambar[$no++] ?>">
+                                    <h3><?php echo $jud ?></h3>
+                                    
+                                </div>
+                            </div>                                                
+                        </div>
+                        <?php 
+                    } 
+                    ?>
+               </div>
+            </div>
+        </div>
 
         <!-- About Start -->
         <div class="container-xxl py-5">
@@ -141,7 +168,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="<?php echo base_url('template/') ?>img/about.jpg">
                     </div>
                 </div>
             </div>
@@ -162,7 +189,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
+                        <img class="img-fluid mt-5" style="height: 250px;" src="<?php echo base_url('template/') ?>img/newsletter.png">
                     </div>
                 </div>
             </div>
@@ -263,7 +290,7 @@
                 <div class="row g-4 portfolio-container">
                     <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo base_url('template/') ?>img/portfolio-1.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
@@ -275,7 +302,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo base_url('template/') ?>img/portfolio-2.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
@@ -287,7 +314,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo base_url('template/') ?>img/portfolio-3.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
@@ -299,7 +326,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo base_url('template/') ?>img/portfolio-4.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
@@ -311,7 +338,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo base_url('template/') ?>img/portfolio-5.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
@@ -323,7 +350,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
                         <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <img class="img-fluid w-100" src="<?php echo base_url('template/') ?>img/portfolio-6.jpg" alt="">
                             <div class="portfolio-overlay">
                                 <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                 <div class="mt-auto">
@@ -347,7 +374,7 @@
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
                         <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?php echo base_url('template/') ?>img/testimonial-1.jpg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -358,7 +385,7 @@
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
                         <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?php echo base_url('template/') ?>img/testimonial-2.jpg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -369,7 +396,7 @@
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
                         <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?php echo base_url('template/') ?>img/testimonial-3.jpg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -380,7 +407,7 @@
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
                         <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?php echo base_url('template/') ?>img/testimonial-4.jpg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="text-white mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -410,7 +437,7 @@
                                     <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
                                     <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
                                 </div>
-                                <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                                <img class="img-fluid rounded w-100" src="<?php echo base_url('template/') ?>img/team-1.jpg" alt="">
                             </div>
                             <div class="px-4 py-3">
                                 <h5 class="fw-bold m-0">Jhon Doe</h5>
@@ -427,7 +454,7 @@
                                     <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
                                     <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
                                 </div>
-                                <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
+                                <img class="img-fluid rounded w-100" src="<?php echo base_url('template/') ?>img/team-2.jpg" alt="">
                             </div>
                             <div class="px-4 py-3">
                                 <h5 class="fw-bold m-0">Emma William</h5>
@@ -444,7 +471,7 @@
                                     <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
                                     <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
                                 </div>
-                                <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
+                                <img class="img-fluid rounded w-100" src="<?php echo base_url('template/') ?>img/team-3.jpg" alt="">
                             </div>
                             <div class="px-4 py-3">
                                 <h5 class="fw-bold m-0">Noah Michael</h5>
@@ -487,22 +514,22 @@
                         <h5 class="text-white mb-4">Project Gallery</h5>
                         <div class="row g-2">
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                                <img class="img-fluid" src="<?php echo base_url('template/') ?>img/portfolio-1.jpg" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                                <img class="img-fluid" src="<?php echo base_url('template/') ?>img/portfolio-2.jpg" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                                <img class="img-fluid" src="<?php echo base_url('template/') ?>img/portfolio-3.jpg" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                                <img class="img-fluid" src="<?php echo base_url('template/') ?>img/portfolio-4.jpg" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                                <img class="img-fluid" src="<?php echo base_url('template/') ?>img/portfolio-5.jpg" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                                <img class="img-fluid" src="<?php echo base_url('template/') ?>img/portfolio-6.jpg" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -521,9 +548,10 @@
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
@@ -547,15 +575,15 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo base_url() ?>template/lib/wow/wow.min.js"></script>
-    <script src="<?php echo base_url() ?>template/lib/easing/easing.min.js"></script>
-    <script src="<?php echo base_url() ?>template/lib/waypoints/waypoints.min.js"></script>
-    <script src="<?php echo base_url() ?>template/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="<?php echo base_url() ?>template/lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="<?php echo base_url() ?>template/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="<?php echo base_url('template/') ?>lib/wow/wow.min.js"></script>
+    <script src="<?php echo base_url('template/') ?>lib/easing/easing.min.js"></script>
+    <script src="<?php echo base_url('template/') ?>lib/waypoints/waypoints.min.js"></script>
+    <script src="<?php echo base_url('template/') ?>lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="<?php echo base_url('template/') ?>lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="<?php echo base_url('template/') ?>lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="<?php echo base_url() ?>template/js/main.js"></script>
+    <script src="<?php echo base_url('template/') ?>js/main.js"></script>
 </body>
 
 </html>
